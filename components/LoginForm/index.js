@@ -4,7 +4,10 @@ export default function LoginForm({ loginUserFunction }) {
   return (
     <div className={styles.pageWrapper}>
       <h2>Login Form</h2>
-      <form onSubmit={(e) => loginUserFunction(e)}>
+      <form
+        className={styles.formWrapper}
+        onSubmit={(e) => loginUserFunction(e)}
+      >
         <label htmlFor="email">Email</label>
         <input type="email" name="email" />
 
